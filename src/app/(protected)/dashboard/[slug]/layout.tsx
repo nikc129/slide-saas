@@ -1,18 +1,33 @@
+import Navbar from '@/components/global/navbar'
 import Sidebar from '@/components/global/sidebar'
 import React from 'react'
 
 type Props = {
-    childer:React.ReactNode
-    params:{slug:string}
+  children: React.ReactNode
+  params: { slug: string }
 }
 
-const layout = ({childer,params}: Props) => {
+const layout = ({ children, params }: Props) => {
 
-    
+
 
   return (
     <div>
       <Sidebar slug={params.slug} />
+      <div
+        className="
+      lg:ml-[250px] 
+      lg:pl-10 
+      lg:py-5 
+      flex 
+      flex-col 
+      overflow-auto
+      "
+      >
+        <Navbar slug={params.slug} />
+        {children}
+      
+      </div>
     </div>
   )
 }
