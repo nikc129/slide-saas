@@ -15,6 +15,7 @@ import Sheet from '../sheet'
 import CreateAutomation from '../create-automation'
 import Search from './search'
 import Notifications from './notification'
+import MainBreadCrumb from '../main-bread-crumb'
 
 
 type Props = {
@@ -72,10 +73,10 @@ const Navbar = ({slug}: Props) => {
       <CreateAutomation/>
       <Notifications />
     </div>
-    {/* <MainBreadCrumb
+    <MainBreadCrumb
       page={page === slug ? 'Home' : page}
       slug={slug}
-    /> */}
+    />
   </div>
   )
 }
