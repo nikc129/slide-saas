@@ -15,7 +15,7 @@ import Sheet from '../sheet'
 import CreateAutomation from '../create-automation'
 import Search from './search'
 import Notifications from './notification'
-import MainBreadCrumb from '../main-bread-crumb'
+import MainBreadCrumb from '../Bread-Crumb/main-bread-crumb'
 
 
 type Props = {
