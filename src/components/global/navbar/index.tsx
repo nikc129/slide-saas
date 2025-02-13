@@ -9,13 +9,13 @@ import Items from '../sidebar/items'
 import { Separator } from '@/components/ui/separator'
 import ClerkAuthState from '../cleark-auth-state'
 import { HelpDuoToneWhite } from '@/icons'
-import { SubscriptionPlan } from '../subscription-plan'
 import UpgradeCard from '../sidebar/upgradecard'
 import Sheet from '../sheet'
 import CreateAutomation from '../create-automation'
 import Search from './search'
 import Notifications from './notification'
 import MainBreadCrumb from '../Bread-Crumb/main-bread-crumb'
+import { SubscriptionPlan } from '../subscription-plan'
 
 
 type Props = {

@@ -4,7 +4,7 @@ import { ChevronRight, PencilIcon } from 'lucide-react'
 import React from 'react'
 import ActivateAutomationButton from '../../Activate-Automation-Button'
 import { useMutationDataState } from '@/hooks/use-mutation-data'
-import { useQueryAutomation } from '@/hooks/use-Query-Automations'
+import { useQueryAutomation } from '@/hooks/use-query'
 import { useEditAutomation } from '@/hooks/use-automation'
 import { Input } from '@/components/ui/input'
 

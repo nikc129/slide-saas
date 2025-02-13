@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 
 import CreateAutomation from '../create-automation'
 import { useMutationDataState } from '@/hooks/use-mutation-data'
-import { useQueryAutomations } from '@/hooks/use-Query-Automations'
+import { useQueryAutomations } from '@/hooks/use-query'
 import { usePaths } from '@/hooks/use-nav'
 
 type Props = {}
