@@ -11,8 +11,9 @@ import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import Loader from '../../loader'
 import { useQueryAutomation } from '@/hooks/use-query'
-import ThenAction from './then-action'
+import ThenAction from '../then/then-action'
 import { useTriggers } from '@/hooks/use-automation'
+import Keywords from './keywords'
 
 type Props = {
   id: string
@@ -59,12 +60,7 @@ const Trigger = ({ id }: Props) => {
           <div
             key={trigger.id}
             onClick={() => onSetTrigger(trigger.type)}
-            className={cn(
-              'hover:opacity-80 text-white rounded-xl flex cursor-pointer flex-col p-3 gap-y-2',
-              !types?.find((t) => t === trigger.type)
-                ? 'bg-background-80'
-                : 'bg-gradient-to-br from-[#3352CC] font-medium to-[#1C2D70]'
-            )}
+            className={'hover:opacity-80 text-white rounded-xl flex cursor-pointer flex-col p-3 gap-y-2   bg-background-80 '}
           >
             <div className="flex gap-x-2 items-center">
               {trigger.icon}

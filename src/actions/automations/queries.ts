@@ -119,3 +119,46 @@ export const addTrigger = async (automationId: string, trigger: string[]) => {
     },
   })
 }
+
+export const addKeyWord = async (automationId: string, keyword: string) => {
+  return client.automation.update({
+    where: {
+      id: automationId,
+    },
+    data: {
+      keywords: {
+        create: {
+          word: keyword,
+        },
+      },
+    },
+  })
+}
+export const deleteKeywordQuery = async (id: string) => {
+  return client.keyword.delete({
+    where: { id },
+  })
+}
+
+export const addPost = async (
+  autmationId: string,
+  posts: {
+    postid: string
+    caption?: string
+    media: string
+    mediaType: 'IMAGE' | 'VIDEO' | 'CAROSEL_ALBUM'
+  }[]
+) => {
+  return await client.automation.update({
+    where: {
+      id: autmationId,
+    },
+    data: {
+      posts: {
+        createMany: {
+          data: posts,
+        },
+      },
+    },
+  })
+}
